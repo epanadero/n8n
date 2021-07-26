@@ -381,19 +381,19 @@ const config = convict({
 		basicAuth: {
 			active: {
 				format: 'Boolean',
-				default: false,
+				default: true,
 				env: 'N8N_BASIC_AUTH_ACTIVE',
 				doc: 'If basic auth should be activated for editor and REST-API',
 			},
 			user: {
 				format: String,
-				default: '',
+				default: 'admin',
 				env: 'N8N_BASIC_AUTH_USER',
 				doc: 'The name of the basic auth user',
 			},
 			password: {
 				format: String,
-				default: '',
+				default: 'admin',
 				env: 'N8N_BASIC_AUTH_PASSWORD',
 				doc: 'The password of the basic auth user',
 			},
